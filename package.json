@@ -1,0 +1,22 @@
+{
+  "name": "mon-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio en ligne",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garciamarco33/mon-portfolio.git"
+  },
+  "author": "Marco Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garciamarco33/mon-portfolio/issues"
+  },
+  "homepage": "https://github.com/garciamarco33/mon-portfolio#readme",
+  "dependencies": {
+    "bulma": "^0.4.3"
+  }
+}
