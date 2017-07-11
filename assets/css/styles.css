@@ -6,6 +6,7 @@ html, body {
     padding: 0;
 
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .flex {
@@ -76,8 +77,6 @@ html, body {
 .cover-btn {
     border-radius: 50px;
     width: 7%;
-
-    transition: background-image 0.2s;
 
     background-image: -webkit-gradient(linear, left, right, from(#1DA0CA), to(#5CC2DC));
     background-image: -webkit-linear-gradient(left, #1DA0CA, #5CC2DC);
