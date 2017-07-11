@@ -59,7 +59,7 @@ html, body {
     width: 100%;
     height: 100%;
 
-    background-image: url("/assets/img/cover.jpeg");
+    background-image: url("../img/cover.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,69 +73,84 @@ html, body {
     text-shadow: 0 0 10px black;
 }
 
+.cover-btn {
+    border-radius: 50px;
+    width: 7%;
+
+    transition: background-image 0.2s;
+
+    background-image: -webkit-gradient(linear, left, right, from(#1DA0CA), to(#5CC2DC));
+    background-image: -webkit-linear-gradient(left, #1DA0CA, #5CC2DC);
+    background-image: -moz-linear-gradient(left, #1DA0CA, #5CC2DC);
+    background-image: linear-gradient(to right, #1DA0CA, #5CC2DC);
+}
+
+.cover-btn:hover {
+
+    background-image: -webkit-gradient(linear, left, right, from(#1885A8), to(#52ADC4));
+    background-image: -webkit-linear-gradient(left, #1885A8, #52ADC4);
+    background-image: -moz-linear-gradient(left, #1885A8, #52ADC4);
+    background-image: linear-gradient(to right, #1885A8, #52ADC4);
+}
+
+
+
 /*   --- Présentation ---   */
 
 #presentation {
-    position: relative;
-    background: white;
+    justify-content: initial;
+    margin-top: 3%;
 }
 
-#presentation:hover #graphiste {
+#presentation:hover #graphiste, #presentation:hover #developpeur {
     opacity: 1;
     transform: translateX(0);
-
-}
-
-#presentation:hover #developpeur {
-    opacity: 1;
-    transform: translateX(0);
-
+    transition: transform 0.3s, opacity 0.5s;
 }
 
 #pres {
-    width: 20%;
+    flex-direction: column;
+}
 
-    margin: 5%;
-
-    flex-direction: column
+.sub {
+    margin-bottom: 0 !important;
 }
 
 #photo {
-    width: 100%;
-
+    margin-top: 3%;
+    width: 60%;
     border-radius: 50%;
 }
 
 #fleches {
-    margin-top: -7%;
-    width: 90%;
+    margin-top: -2%;
+    width: 40%;
 }
 
 #graphiste {
     text-align: right;
     transform: translateX(100%);
-    transition: transform 0.3s, opacity 0.2s;
     opacity: 0;
+
+    transition: transform 0.4s, opacity 0.2s;
 }
 
 #developpeur {
     transform: translateX(-100%);
-    transition: transform 0.3s, opacity 0.2s;
     opacity: 0;
+
+    transition: transform 0.4s, opacity 0.2s;
 }
 
 .btn {
     width: 70%;
-
     margin-top: 20%;
-
     border-radius: 50px;
 
     transition: all 0.2s;
 }
 .btn-green {
     color: #4BB485 !important;
-
     border: 2px solid #4BB485 !important;
 }
 
@@ -148,9 +163,13 @@ html, body {
     background-image: linear-gradient(to right, #4BB485, #7CBE6D);
 }
 
+.btn-green:focus {
+    background: none !important;
+    color: #4BB485 !important;
+}
+
 .btn-blue {
     color: #1DA0CA !important;
-    
     border: 2px solid #1DA0CA !important;
 }
 
@@ -161,4 +180,17 @@ html, body {
     background-image: -webkit-linear-gradient(left, #1DA0CA, #5CC2DC);
     background-image: -moz-linear-gradient(left, #1DA0CA, #5CC2DC);
     background-image: linear-gradient(to right, #1DA0CA, #5CC2DC);
+}
+
+.btn-blue:focus {
+    background: none !important;
+    color: #1DA0CA !important;
+}
+
+.button.is-primary.is-outlined:hover {
+    background-color: transparent;
+}
+
+.fa {
+    margin-right: 0.5vw !important;
 }

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Marco Garcia</title>
-    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <!--     Menu     -->
 
     <div id="menu" class="flex">
-        <img id="monogramme" src="/assets/img/monogramme.svg" alt="monogramme marco garcia">
+        <img id="monogramme" src="./assets/img/monogramme.svg" alt="monogramme marco garcia">
     </div>
 
 
@@ -24,45 +25,51 @@
     <div id="cover" class="flex">
         <h1 class="title cover-title is-1"><span class="light">MARCO</span> <strong>GARCIA</strong></h1>
         <h2 class="subtitle cover-title is-5">GRAPHISTE - DÉVELOPPEUR WEB</h2>
+        <a href="./assets/ddl/cv.pdf" target="_blank" class="button cover-btn is-primary">
+            <i class="fa fa-download"></i>CV
+        </a>
     </div>
 
 
 
     <!--     Présentation     -->
-    <div id="presentation" class="flex">
 
-        <div id="graphiste">
-            <h3 class="title green">Graphiste</h3>
-            <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Indesign</li>
-                <li>Lightroom</li>
-            </ul>
-            <a class="button is-primary is-outlined btn btn-green">Book</a>
+    <div id="presentation" class="flex columns">
+        <div class="column is-2 is-offset-2">
+            <div id="graphiste">
+                <h3 class="title green">Graphiste</h3>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Indesign</li>
+                    <li>Lightroom</li>
+                </ul>
+                <a href="./assets/ddl/book.pdf" target="_blank" class="button is-primary is-outlined btn btn-green"><i class="fa fa-download"></i>Book</a>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div id="pres" class="flex">
+                <h2 class="title has-text-centered is-3 sub"><span class="light">MARCO</span> <strong>GARCIA</strong></h2>
+                <h3 class="has-text-centered">garcia.j.marco@gmail.com</h3>
+                <h4 class="has-text-centered">06 25 13 57 87</h4>
+                <img id="photo" src="./assets/img/marco.jpg" alt="photo de marco garcia">
+                <img id="fleches" src="./assets/img/fleches.svg" alt="fleches dessinés">
+            </div>
+        </div>
+        <div class="column is-2">
+            <div id="developpeur">
+                <h3 class="title blue">Développeur</h3>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>AngularJS</li>
+                    <li>NodeJS</li>
+                </ul>
+                <a href="https://github.com/garciamarco33/" target="_blank" class="button is-primary is-outlined btn btn-blue"><i class="fa fa-github"></i>Github</a>
+            </div>
         </div>
 
-        <div id="pres" class="flex">
-            <h2 class="title has-text-centered is-3"><span class="light">MARCO</span> <strong>GARCIA</strong></h2>
-            <h3 class="has-text-centered">garcia.j.marco@gmail.com</h3>
-            <h4 class="has-text-centered">06 25 13 57 87</h4>
-            <img id="photo" src="/assets/img/marco.jpg" alt="photo de marco garcia">
-            <img id="fleches" src="/assets/img/fleches.svg" alt="fleches dessinés">
-        </div>
-
-        <div id="developpeur">
-            <h3 class="title blue">Développeur</h3>
-            <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>AngularJS</li>
-                <li>NodeJS</li>
-            </ul>
-            <a href="https://github.com/garciamarco33/" target="_blank" class="button is-primary is-outlined btn btn-blue">Github</a>
-        </div>
-    </div>
-
-    <script src="/assets/js/index.js"></script>
+        <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
