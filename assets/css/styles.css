@@ -29,6 +29,44 @@ html, body {
 
 
 
+
+/*   --- Loading Page ---   */
+
+#blank {
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    position: fixed;
+    z-index: 20;
+
+    opacity: 1;
+    transition: all 1s;
+}
+
+.fadeOut {
+    opacity: 0 !important;
+}
+
+#loading {
+    width: 5em;
+    height: 5em;
+
+    border: 3px dashed #1DA0CA;
+    border-radius: 100%;
+    
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
 /*   --- Menu ---   */
 
 #menu {
@@ -72,11 +110,12 @@ html, body {
 .cover-title {
     color: white;
     text-shadow: 0 0 10px black;
+    text-align: center;
 }
 
 .cover-btn {
     border-radius: 50px;
-    width: 7%;
+    min-width: 7%;
 
     background-image: -webkit-gradient(linear, left, right, from(#1DA0CA), to(#5CC2DC));
     background-image: -webkit-linear-gradient(left, #1DA0CA, #5CC2DC);
