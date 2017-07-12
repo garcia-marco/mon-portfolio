@@ -107,6 +107,10 @@ html, body {
     flex-direction: column;
 }
 
+.title {
+    height: 1.2em;
+}
+
 .cover-title {
     color: white;
     text-shadow: 0 0 10px black;
@@ -130,6 +134,7 @@ html, body {
     background-image: -moz-linear-gradient(left, #1885A8, #52ADC4);
     background-image: linear-gradient(to right, #1885A8, #52ADC4);
 }
+
 
 
 
