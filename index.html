@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Marco Garcia</title>
+    <title>Marco Garcia - Graphiste - Développeur Web</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
@@ -24,9 +25,25 @@
     </div>
 
     <!--     Menu     -->
-
-    <div id="menu" class="flex">
-        <img id="monogramme" src="./assets/img/monogramme.svg" alt="monogramme marco garcia">
+    <div class="menu flex">
+        <div class="fond monogramme"></div>
+    </div>
+    <div class="menu flex">
+        <!-- <a target="#cover" class="scroll_to link has-text-right marg-right">
+            ACCUEIL
+        </a>
+        <a target="#presentation" class="scroll_to link big-marg-right has-text-right">
+            PRÉSENTATION
+        </a> -->
+        <!-- <a target="#cover" class="scroll_to"> -->
+        <img class="monogramme" src="./assets/img/monogramme.svg" alt="monogramme marco garcia">
+        <!-- </a>
+        <a target="#realisations" class="scroll_to link big-marg-left">
+            MES RÉALISATIONS
+        </a>
+        <a target="#contact" class="scroll_to link marg-left">
+            ME CONTACTER
+        </a> -->
     </div>
 
 
@@ -34,53 +51,343 @@
     <!--     Cover     -->
     <div id="cover" class="flex">
         <h1 class="title cover-title is-1"></h1>
-        <h2 class="subtitle cover-title is-5">GRAPHISTE - DÉVELOPPEUR WEB</h2>
-        <a href="./assets/ddl/cv.pdf" target="_blank" class="button cover-btn is-primary">
-            <i class="fa fa-download"></i>CV
-        </a>
-    </div>
-
-
-
-    <!--     Présentation     -->
-
-    <div id="presentation" class="flex columns">
-        <div class="column is-2 is-offset-2">
-            <div id="graphiste">
-                <h3 class="title green">Graphiste</h3>
-                <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Indesign</li>
-                    <li>Lightroom</li>
-                </ul>
-                <a href="./assets/ddl/book.pdf" target="_blank" class="button is-primary is-outlined btn btn-green"><i class="fa fa-download"></i>Book</a>
-            </div>
+        <h2 class="subtitle cover-title is-5">GRAPHISTE ET DÉVELOPPEUR WEB CHEZ MYTRAITEUR</h2>
+        <div class="flex">
+            <a href="./assets/ddl/cv.pdf" target="_blank" class="button cover-btn is-primary">
+                <i class="fa fa-download"></i>CV
+            </a>
+            <a href="https://www.mytraiteur.com/" target="_blank" class="button cover-btn is-primary marg-left">
+                <img src="./assets/img/mt-white.svg" id="mt-logo" alt="Logo MyTraiteur">
+            </a>
         </div>
-        <div class="column is-4">
-            <div id="pres" class="flex">
-                <h2 class="title has-text-centered is-3 sub"><span class="light">MARCO</span> <strong>GARCIA</strong></h2>
-                <h3 class="has-text-centered">garcia.j.marco@gmail.com</h3>
-                <h4 class="has-text-centered">06 25 13 57 87</h4>
-                <img id="photo" src="./assets/img/marco.jpg" alt="photo de marco garcia">
-                <img id="fleches" src="./assets/img/fleches.svg" alt="dessins de flèches">
-
-            </div>
-        </div>
-        <div class="column is-2">
-            <div id="developpeur">
-                <h3 class="title blue">Développeur</h3>
-                <ul>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>AngularJS</li>
-                    <li>NodeJS</li>
-                </ul>
-                <a href="https://github.com/garciamarco33/" target="_blank" class="button is-primary is-outlined btn btn-blue"><i class="fa fa-github"></i>Github</a>
-            </div>
+        <div>
+            <i id="arrow-down" class="fa fa-angle-double-down"></i>
         </div>
     </div>
 
+    <div class="container">
+        <!--     Présentation     -->
+
+        <div id="presentation" class="flex-center columns contain is-desktop">
+            <div id="graph-order" class="column is-half-tablet is-2-desktop is-offset-2">
+                <div id="graphiste">
+                    <h3 class="title green">Graphiste</h3>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Indesign</li>
+                        <li>AfterEffects</li>
+                        <li>Premiere</li>
+                        <li>Lightroom</li>
+                    </ul>
+                    <a href="./assets/ddl/book.pdf" target="_blank" class="button is-primary is-outlined btn btn-green">
+                        <i class="fa fa-download"></i>Book</a>
+                </div>
+            </div>
+            <div id="pres-order" class="column is-4">
+                <div class="flex display-col">
+                    <h2 class="flex title has-text-centered is-3 sub lighter">MARCO
+                        <span class="bolder">GARCIA</span>
+                    </h2>
+                    <h3 class="has-text-centered">garcia.j.marco@gmail.com</h3>
+                    <h4 class="has-text-centered">06 25 13 57 87</h4>
+                    <img id="photo" src="./assets/img/marco.jpg" alt="photo de marco garcia">
+                    <img id="fleches" src="./assets/img/fleches.svg" alt="dessins de flèches">
+
+                </div>
+            </div>
+            <div id="dev-order" class="column is-half-tablet is-2-desktop">
+                <div id="developpeur">
+                    <h3 class="title blue">Développeur</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>Adonis</li>
+                        <li>AngularJS</li>
+                    </ul>
+                    <a href="https://github.com/garciamarco33/" target="_blank" class="button is-primary is-outlined btn btn-blue btn-blue-pres">
+                        <i class="fa fa-github"></i>Github</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--     Réalisations     -->
+        <div id="realisations" class="flex contain display-col">
+            <h2 class="title flex has-text-centered is-3 sub lighter">MES
+                <span class="bolder">RÉALISATIONS</span>
+            </h2>
+        </div>
+        <div class="columns">
+
+            <!--     Tabs     -->
+            <div class="column is-10 is-offset-1">
+                <div class="tabs is-boxed is-centered contain">
+                    <ul>
+                        <!-- <li id="graphisme-tab" class="is-active tab">
+                                <a>
+                                    <span class="icon is-small">
+                                        <i class="fa fa-image"></i>
+                                    </span>
+                                    <span>Graphisme</span>
+                                </a>
+                            </li> -->
+                        <li id="dev-tab" class="is-active tab">
+                            <a>
+                                <span class="icon is-small">
+                                    <i class="fa fa-code"></i>
+                                </span>
+                                <span>Développement</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--     Tab Graphisme     -->
+                <div id="graphisme" class="columns padding" style="display:none;">
+                </div>
+
+                <!--     Tab Développement     -->
+                <div id="developpement" class="columns padding">
+                    <div class="column is-3">
+                        <div id="mytraiteur" class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./assets/img/mt.jpg" alt="Site MyTraiteur">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">MyTraiteur
+                                        </p>
+                                        <p class="subtitle is-6">© 2018</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Commande et organisation de réception traiteur haut de gamme.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div id="rendre" class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./assets/img/rendre.jpg" alt="Site Rendre Service">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Rendre Service
+                                        </p>
+                                        <p class="subtitle is-6">© 2017</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Site de mise en relation entre particuliers pour se rendre service.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div id="reflex" class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./assets/img/reflex.jpg" alt="Site Réflex'Eudoxie">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Réflex'Eudoxie
+                                        </p>
+                                        <p class="subtitle is-6">© 2017</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Site de prise de rendez-vous avec administration pour une réflexologue.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div id="xilo" class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./assets/img/xilo.jpg" alt="Site Xilo Pilota">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Xilo Pilota
+                                        </p>
+                                        <p class="subtitle is-6">© 2016</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Boutique en ligne d'une marque de vêtement de Pelote Basque
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-mytraiteur" class="modal flex" style="display:none;">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">MyTraiteur</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body has-text-centered">
+                            <img src="./assets/img/mt.jpg" alt="Site MyTraiteur">
+                            <p>
+                                Commande et organisation de réception traiteur haut de gamme.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot flex">
+                            <a target="_blank" class="button is-primary is-outlined btn btn-blue" href="https://www.mytraiteur.com/">Accéder au site
+                                <i class="fa fa-angle-right marg-left" aria-hidden="true"></i>
+                            </a>
+                        </footer>
+                    </div>
+                </div>
+                <div id="modal-rendre" class="modal flex" style="display:none;">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Rendre Service</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body has-text-centered">
+                            <img src="./assets/img/rendre.jpg" alt="Site Rendre Service">
+                            <p>
+                                Site de mise en relation entre particuliers pour se rendre service.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot flex">
+                            <i class="has-text-centered">
+                                Ce site n'est plus en ligne suite à la demande de son propriétaire.
+                            </i>
+                        </footer>
+                    </div>
+                </div>
+                <div id="modal-reflex" class="modal flex" style="display:none;">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Réflex'Eudoxie</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body has-text-centered">
+                            <img src="./assets/img/reflex.jpg" alt="Site Réflex'Eudoxie">
+                            <p>
+                                Site de prise de rendez-vous avec administration pour une réflexologue.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot flex">
+                            <i class="has-text-centered">
+                                Ce site a été fait dans le cadre de ma formation à la Wild Code School et n'est donc pas en ligne.
+                            </i>
+                        </footer>
+                    </div>
+                </div>
+                <div id="modal-xilo" class="modal flex" style="display:none;">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Xilo Pilota</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body has-text-centered">
+                            <img src="./assets/img/xilo.jpg" alt="Site Xilo Pilota">
+                            <p>
+                                Boutique en ligne d'une marque de vêtement de Pelote Basque
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot flex">
+                            <a target="_blank" class="button is-primary is-outlined btn btn-blue" href="http://www.xilo-pilota.com/fr/">Accéder au site
+                                <i class="fa fa-angle-right marg-left" aria-hidden="true"></i>
+                            </a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="marg-bot">
+            <div class="flex contain display-col">
+                <h2 class="title flex has-text-centered is-3 sub lighter">ME
+                    <span class="bolder">CONTACTER</span>
+                </h2>
+            </div>
+            <div class="columns marg-top">
+                <div class="column is-8 is-offset-2">
+                    <form enctype="application/x-www-form-urlencoded" id='mailform' onsubmit="return false">
+                        <div class="columns no-marg">
+                            <div class="field column is-6 no-pad">
+                                <label class="label">Nom</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="text" name="name" id="name" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field column is-6 no-pad marg-left-resp">
+                                <label class="label">Adresse Mail</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" name="email" id="email" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" name="message" id="message" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li class="flex">
+                                <input type='submit' onclick="sendMail()" class="button cover-btn is-primary" value="Envoyer message">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal-contact" class="modal flex" style="display:none;">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <section class="modal-card-body has-text-centered">
+                        <p>Message envoyé !</p>
+                    </section>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer marg-top">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>© MARCO
+                    <span class="bolder">GARCIA</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
